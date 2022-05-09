@@ -9,9 +9,9 @@
 *{
     --white-rock: #EFEFDE;
     --gray: #808080;
-    --green-tasman: #CEDFCE;
-    --green-pale: #BDCFBD;
-    --green-envy: #9CAA9C;
+    --green-tasman: #b9ddb9;
+    --green-pale: #84b684;
+    --green-envy: #608b60;
     --font: helvetica;
 }
 body{
@@ -32,7 +32,8 @@ a {
 
 /* main */
 header{
-    background-color: var(--green-envy);
+    background: rgb(96,139,96);
+    background: linear-gradient(0deg, rgba(96,139,96,1) 0%, rgba(132,182,132,1) 61%);
     margin: 0;
     width: 100vw;
 
@@ -55,6 +56,7 @@ header h1{
     margin: 0;
     width: 600px;
     left: 70px;
+    text-shadow: 3px 3px 5px white;
 }
 header img{
     width: 70px;
@@ -81,7 +83,7 @@ nav ul{
     justify-content: center;
 }
 nav ul li{
-    border: 1px solid;
+    border: 2px solid;
     border-radius: 3px;
     padding: 20px;
     text-align: center;
@@ -89,7 +91,6 @@ nav ul li{
     transition: .5s;
 }
 nav ul li:hover{
-    border-radius: 0;
     background-color: var(--green-tasman);
     color: var(--gray);
 }
@@ -107,7 +108,6 @@ main{
     grid-template-columns: 1fr 2fr;
 }
 #imgIteration{
-    border: 1px solid black;
     margin: 0;
     object-fit: none;
     position: relative;
@@ -149,7 +149,8 @@ form input {
 
 
 footer{
-    background-color: var(--green-envy);
+    background: rgb(132,182,132);
+    background: linear-gradient(0deg, rgba(132,182,132,1) 0%, rgba(96,139,96,1) 62%);
     font-style: italic;
     text-align: center;
     padding: 10px;
