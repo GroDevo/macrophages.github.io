@@ -1,0 +1,159 @@
+/* 
+- optomize img iteration, add content for main
+- See if Media Query in JS works
+- Add transition and animation buttons
+- Image Iteration w/ arrows
+
+*/
+
+*{
+    --white-rock: #EFEFDE;
+    --gray: #808080;
+    --green-tasman: #CEDFCE;
+    --green-pale: #BDCFBD;
+    --green-envy: #9CAA9C;
+    --font: helvetica;
+}
+body{
+    background-color: var(--white-rock);
+    margin: 0;
+    font-family: var(--font);
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: 15vh 75vh 10vh;
+}
+a {
+    text-decoration: none;
+}
+/* extra  */
+
+ 
+
+/* main */
+header{
+    background-color: var(--green-envy);
+    margin: 0;
+    width: 100vw;
+
+    grid-column: 1/-1;
+
+    /* cntr -a- tag */
+    display: flex;
+}
+header a {
+    text-decoration: none;
+    color: black;
+
+    display: grid;
+    grid-template-columns: 8vw 50vw;
+    justify-content: start;
+    align-items: center;
+}
+header h1{
+    position: relative;
+    margin: 0;
+    width: 600px;
+    left: 70px;
+}
+header img{
+    width: 70px;
+    transform: rotate(45deg);
+    
+    justify-self: center;
+}
+
+nav{
+    background-color: var(--green-pale);
+
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: inherit;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+nav ul li{
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    transition: .5s;
+}
+nav ul li:hover{
+    border-radius: 0;
+    background-color: var(--green-tasman);
+    color: var(--gray);
+}
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    grid-column: 2/4;
+    padding: 0;
+
+    /* children */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+#imgIteration{
+    border: 1px solid black;
+    margin: 0;
+    object-fit: none;
+    position: relative;
+    background-image: url('media/bacteriophage-vs-bacterium-755x1024.png');
+    background-size: cover;
+    transition: 0.5s;
+}
+.arrow{
+    border: 1px solid;
+    display: none;
+}
+#imgIteration button{
+    opacity: 0.5;
+    background-color: var(--green-tasman);
+    border: none;
+    cursor: pointer;
+    margin: 0;
+}
+#wrapper h2 {
+    margin: 0;
+}
+#wrapper li{
+    font-weight: bold;
+}
+#wrapper {
+    padding: 10px;
+}
+form {
+    border: 1px solid;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form input {
+    font-family: var(--font);
+}
+
+
+footer{
+    background-color: var(--green-envy);
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+
+    grid-column: 1/4;
+}
+
